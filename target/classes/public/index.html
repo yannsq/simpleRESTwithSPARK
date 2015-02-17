@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Welcome to BOOKS !</title>
+    <script src='js/jquery-2.1.3.js'></script>
+  </head>
+  <body>
+<h1>Bienvenue dans votre bibliothèque !</h1>
+<p>
+Sélectionnez l'action que vous souhaitez réaliser:
+</p>
+<ul>
+  <li><a href='books'>Lister tous vos livres</a></li>
+  <li>
+  <form action='/books' method='POST'>
+  Ajouter un nouveau livre. Auteur:
+  <input type='text'   name ='author' value='auteur'>
+  <input type='text'   name ='title'  value='titre'>
+  <input type='submit' value="Let's go"/> 
+  </form>
+  </li>
+  <li><a href=''>Modifier un livre existant</a></li>
+  <li><a href=''>Supprimer un livre existant</a></li>
+</ul>
+<img src='img/books.jpg'>Livres, livres, livres ...</img>
+  </body>
+</html>
